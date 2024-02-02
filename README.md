@@ -42,20 +42,7 @@ class BooleanRetrieval:
             self.index[term].add(doc_id)
 
     def create_documents_matrix(self, documents):
-        terms_list = list(self.index.keys())
-        terms_list.sort()
-
-        self.documents_matrix = np.zeros((len(documents), len(terms_list)), dtype=int)
-
-        for i, (_, text) in enumerate(documents.items()):
-            terms = text.lower().split()
-            for j, term in enumerate(terms_list):
-                self.documents_matrix[i, j] = 1 if term in terms else 0
-
-        self.terms_list = terms_list
-
-    def print_all_terms(self):
-       //type your code here
+        //type your code here
 
     def print_documents_matrix_table(self):
        //type yuor code here
