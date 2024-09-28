@@ -23,14 +23,12 @@ The Boolean model in Information Retrieval (IR) is a fundamental model used for 
 
 ### Program:
 
-
-
-import numpy as np
-import pandas as pd
-class BooleanRetrieval:
-    def __init__(self):
-        self.index = {}
-        self.documents_matrix = None
+    import numpy as np
+    import pandas as pd
+    class BooleanRetrieval:
+        def __init__(self):
+            self.index = {}
+            self.documents_matrix = None
 
     def index_document(self, doc_id, text):
         terms = text.lower().split()
