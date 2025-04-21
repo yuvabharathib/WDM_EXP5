@@ -24,7 +24,7 @@ The Boolean model in Information Retrieval (IR) is a fundamental model used for 
 ### Program:
 
 ```
-212222230148
+212222230181
 import numpy as np
 import pandas as pd
 
